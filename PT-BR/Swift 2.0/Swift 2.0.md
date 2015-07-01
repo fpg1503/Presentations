@@ -323,7 +323,7 @@ struct Oven : CookerType {
         food.state = .Cooked(self)
         myAnalyticsLogger("Just cooked a \(food.state) \(food.name) using a\
         \(self) at \(temperature) degrees")
-        self.turnOff();
+        self.turnOff()
     }
 }
 ```
@@ -352,7 +352,6 @@ struct Oven : CookerType {
         food.state = .Cooked(self)
         myAnalyticsLogger("Just cooked a \(food.state) \(food.name) using a\
         \(self) at \(temperature) degrees")
-        self.turnOff();
     }
 }
 ```
